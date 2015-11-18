@@ -1,0 +1,41 @@
+body {
+    background-color: #bdc3c7;
+}
+
+.projects {
+    padding-top: 7.5%;
+    padding-top: 9vh;
+}
+
+.projects {
+    height: 100%;
+}
+
+.projects h2 {
+    color: #fff;
+    font-size: 48px;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+}
+
+.projects p {
+    color: #fff;
+    font-size: 18px;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+}
+
+.shadow {
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.details p {
+    color: #373636;
+    font-size: 18px;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+}
+
+.image {
+    padding-top: 5%;
+}
