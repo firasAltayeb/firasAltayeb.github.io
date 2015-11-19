@@ -102,3 +102,7 @@ html, body {margin:0;padding:0;height:100%;}
   text-shadow: 2px 2px 4px #000000;
   font-weight: bold;
 }
+
+.kcl-link {
+    color: #364e66;
+}
