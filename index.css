@@ -1,5 +1,5 @@
 body {
-  background-image: linear-gradient(#004799, #003066);
+  background-image: linear-gradient(#990029, #003066);
   min-height: 100vh;
   height: 100%;
   padding-top: 2rem;
@@ -15,6 +15,7 @@ body {
 
 .profile {
   flex-direction: row;
+  margin-bottom: -15px;
 }
 
 .profile img {
@@ -90,10 +91,19 @@ body {
     max-width: 540px;
   }
 }
+
 @media (min-width: 768px) {
   .container {
     max-width: 760px;
   }
+}
+
+.custom-link {
+  color: #85a8d1;
+  /* text-decoration: underline;
+  font-weight: bold;
+  font-style: italic;
+  cursor: pointer; */
 }
 
 /* .refactord-logo {
