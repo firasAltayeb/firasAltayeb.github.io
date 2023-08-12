@@ -105,20 +105,20 @@ body {
 
 .llc-logo {
     background: url(assets/llc-logo.png);
-    background-size: 30px 30px;
+    background-size: 40px 30px;
     display: inline-block;
     position: relative;
     height: 30px;
-    width: 30px;
+    width: 40px;
     margin-top: 5px;
     top: 5px;
 }
 
 @media (max-width:425px){
     .llc-logo {
-        background-size: 24px 24px;
+        background-size: 30px 24px;
         height: 24px;
-        width: 24px;
+        width: 30px;
         margin-top: 3px;
         top: 3px;
     }
