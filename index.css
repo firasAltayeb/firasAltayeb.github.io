@@ -1,8 +1,39 @@
 body {
+    font-family: 'Poppins', sans-serif;
     background-image: linear-gradient(#990029, #003066);
     min-height: 100vh;
     height: 100%;
     padding-top: 2rem;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 100%;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.mobile-only {
+    display: block;
+}
+
+.desktop-only {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .mobile-only {
+        display: none;
+    }
+
+    .desktop-only {
+        display: block;
+    }
 }
 
 .transparent-card {
@@ -14,7 +45,9 @@ body {
 }
 
 .profile {
-    flex-direction: row;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin-bottom: -15px;
 }
 
@@ -42,7 +75,6 @@ body {
 }
 
 .text-area {
-    align-items: center;
     margin-top: 1rem;
     font-size: 16px;
     color: #ebebeb;
@@ -59,14 +91,25 @@ body {
     padding: 1rem 1rem 0 1rem;
 }
 
-.skills .col-12 {
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.skills-grid > div {
     margin-bottom: 1rem;
+}
+
+@media (max-width: 767px) {
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 .line {
     margin-left: 15%;
     margin-right: 15%;
-    margin-top: 7%;
+    margin-top: 5%;
     border-bottom: solid;
     border-color: rgba(255, 255, 255, 0.5);
     border-width: 1px;
@@ -74,6 +117,8 @@ body {
 
 .icons {
     font-size: 30px;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
     color: #fff;
 }
 
@@ -83,7 +128,7 @@ body {
     margin: 0.5rem 0.5rem 0rem 0rem;
 }
 
-.icons a :hover {
+.icons a:hover {
     color: #c2c2c2;
 }
 
@@ -96,30 +141,5 @@ body {
 @media (min-width: 768px) {
     .container {
         max-width: 760px;
-    }
-}
-
-.custom-link {
-    color: #85a8d1;
-}
-
-.llc-logo {
-    background: url(assets/llc-logo.png);
-    background-size: 40px 30px;
-    display: inline-block;
-    position: relative;
-    height: 30px;
-    width: 40px;
-    margin-top: 5px;
-    top: 5px;
-}
-
-@media (max-width:425px){
-    .llc-logo {
-        background-size: 30px 24px;
-        height: 24px;
-        width: 30px;
-        margin-top: 3px;
-        top: 3px;
     }
 }
